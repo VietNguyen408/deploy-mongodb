@@ -1,0 +1,3 @@
+fullnameOverride: "viet-mongodb"
+auth:
+  rootPassword: "$MONGODB_ROOT_PASSWORD"
