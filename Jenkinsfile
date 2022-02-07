@@ -54,7 +54,7 @@ pipeline {
             steps {
                 script {
                     sh '''export TF_VAR_access_token=$(cat /opt/ServiceAccount/syndeno/GCP_ACCESS_TOKEN.txt)
-                    terraform apply --auto-approve
+                    terraform apply --lock=false --auto-approve
                     '''
                 }
             }
